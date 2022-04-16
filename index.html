@@ -2,8 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>POC Device Characteristics</title>
-        <meta name="robots" content="noindex,nofollow"/>
+        <title>Device Characteristics</title>
+        <meta name="robots" content="index,follow"/>
         <style>
             ul { margin: 0; list-style-type: none; padding: 0; }
             li { margin: .5em 0; }
@@ -12,18 +12,17 @@
     </head>
     <body>
         <h1>Device characteristics</h1>
-        <p>POC to try to determine device characteristics</p>
+        <p>POC to try to determine your device characteristics. No data are collected.</p>
         <ul>
             <li>navigator.hardwareConcurrency: <span id="hardwareConcurrency"></span></li>
             <li>navigator.deviceMemory: <span id="deviceMemory"></span></li>
             <li>performance.memory.totalJSHeapSize: <span id="totalHeap"></span></li>
             <li>webGl.getParameter(webGl.RENDERER): <span id="webglRenderer"></span></li>
             <li>getUnmaskedInfo(webGl).renderer: <span id="webglUnmaskedRenderer"></span></li>
+            <li><a href="https://oswg.oftn.org/projects/core-estimator/demo/">Core estimator library</a></li>
+            <li><a href="https://github.com/paulgreg/device-characteristics">This page’s source code</a></li>
         </ul>
         <canvas id="glcanvas" width="0" height="0"></canvas>
-
-        <a href="https://oswg.oftn.org/projects/core-estimator/demo/">Core Estimator</a>
-
         <script src="./index.js"></script>
     </body>
 </html>

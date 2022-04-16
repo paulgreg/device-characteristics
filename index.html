@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>POC Device Characteristics</title>
+        <meta name="robots" content="noindex,nofollow"/>
+    </head>
+    <body>
+        <h1>Device characteristics</h1>
+        <p>POC to try to determine device characteristics</p>
+        <ul>
+            <li>navigator.hardwareConcurrency: <span id="hardwareConcurrency"></span></li>
+            <li>navigator.deviceMemory: <span id="deviceMemory"></span></li>
+            <li>performance.memory.totalJSHeapSize: <span id="totalHeap"></span></li>
+            <li>webGl.getParameter(webGl.RENDERER): <span id="webglRenderer"></span></li>
+            <li>getUnmaskedInfo(webGl).renderer: <span id="webglUnmaskedRenderer"></span></li>
+        </ul>
+        <canvas id="glcanvas" width="0" height="0"></canvas>
+
+        <a href="https://oswg.oftn.org/projects/core-estimator/demo/">Core Estimator</a>
+
+        <script src="./index.js"></script>
+    </body>
+</html>
